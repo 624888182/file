@@ -1,0 +1,115 @@
+#Login #canvas {
+	background: url(../img/index/7.jpg);
+	background-size: cover;
+	display: block;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+	#Login .box {
+		width: 14rem;
+		height: 11rem;
+		left: 1rem;
+		top: 30%;
+	}
+	#Login h1 {
+		font-size: 0.8rem;
+	}
+	#Login p {
+		font-size: 0.7rem;
+	}
+	#Login input {
+		
+		height: 0.8rem;
+	}
+	#Login button {
+		
+		line-height: 1.2rem;
+		height: 1.2rem;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 20000px) {
+	#Login .box {
+		width: 500px;
+		height: 400px;
+		top: 30%;
+		left: 30%;
+	}
+	#Login h1{
+		font-size: 30px;
+	}
+	#Login p{
+		margin-bottom: -50px;
+		font-size: 25px;
+	}
+	#Login input {
+		width: 90%;
+		height: 30px;
+	}
+	#Login button {
+		width: 92%;
+		height: 35px;
+		line-height: 35px;
+	}
+}
+
+#Login .box {
+	position: absolute;
+	border-radius: 5px;
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	padding: 20px;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	display: flex;
+	transition: box-shadow .3s ease;
+	background-size: 100%;
+	background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+	background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+	background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+#Login .box:active {
+	cursor: move;
+	-moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+
+#Login .box .content {
+	margin: auto;
+}
+
+#Login h1 {
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(218, 218, 218, 1)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#Login p {
+	margin-top: 10px;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(218, 218, 218, 1)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#Login input {
+	width: 90%;
+	text-align: center;
+	outline: none;
+	border-radius: 5px;
+}
+
+#Login button {
+	width: 92%;
+	outline: none;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	background: rgba(65, 115, 2, 0.8);
+}

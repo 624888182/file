@@ -1,0 +1,528 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+}
+
+#main #top_nav {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+	float: left;
+	color: #fff;
+	background: #5e87b0;
+	transition: all .33s;
+}
+
+#main #top_nav #Top_logo {
+	width: 20%;
+	height: 50px;
+	float: left;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#main #top_nav span {
+	font-size: 16px;
+}
+
+#main #top_nav #Top_logo_menu {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 26px;
+	margin: 11px 0px 0px 12px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	text-align: center;
+}
+
+#main #top_nav #Top_logo_menu span {
+	width: 38px;
+	height: 26px;
+	line-height: 26px;
+	margin-left: 1px;
+	margin-top: -1px;
+	border-radius: 3px;
+	float: left;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#main #top_nav #Top_logo_menu:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+#main #top_nav #Top_logo h1 {
+	margin-left: 15px;
+	padding: 0;
+	float: left;
+	font-size: 20px;
+}
+
+#main #top_nav #Top_logo h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#main #top_nav .top_nav_left_btn {
+	float: left;
+	padding: 0 19px;
+	height: 100%;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+
+#main #top_nav .top_nav_left_btn span {
+	margin: 0px 3px;
+}
+
+#main #top_nav .top_nav_left_btn:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+#main #top_nav #Skins {
+	width: 120px;
+	position: relative;
+}
+
+#main #top_nav .top_nav_menu {
+	background: #f4f4f4;
+	position: relative;
+	top: 50px;
+	border-radius: 3px;
+	z-index: 5;
+	border: 1px solid #c7cbd5;
+	box-shadow: 1px 6px 10px 4px #bbb;
+	overflow: hidden;
+	display: none;
+}
+
+#main #top_nav .top_nav_left_btn #Skins_menu {
+	width: 158px;
+	height: 292px;
+	left: -20px;
+	top: 0px;
+	z-index: 10;
+}
+
+#main #top_nav .top_nav_left_btn #Skins_menu li {
+	width: 150px;
+	height: 40px;
+	color: #000;
+	padding-left: 10px;
+	line-height: 40px;
+	text-align: left;
+	font-size: 13px;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+}
+
+#main #top_nav .top_nav_left_btn #Skins_menu li:hover {
+	background: #fff;
+}
+
+#main #top_nav .top_nav_left_btn #Skins_menu li:first-child {
+	color: #fff;
+	background: #486D93;
+	border: none;
+	cursor: default;
+}
+
+#main #top_nav .Skins_first {
+	color: #fff;
+	background: #486D93;
+	border: none;
+	cursor: default;
+}
+
+#main #top_nav #Top_message {
+	float: right;
+}
+
+#main #top_nav #Top_message li {
+	float: left;
+	padding: 0px 15px;
+	cursor: pointer;
+	position: relative;
+}
+
+#main #top_nav #Top_message li:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+#main #top_nav #Top_message li .Top_message_hint {
+	width: 20px;
+	height: 17px;
+	background: #dd5a43;
+	border-radius: 20px 20px 20px 20px/17px;
+	position: absolute;
+	top: 6px;
+	margin-left: -10px;
+	text-align: center;
+	line-height: 17px;
+}
+
+#main #top_nav #Top_message li span {
+	color: #486d93;
+	transition: all .33s;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px #eee;
+}
+
+#main #top_nav #Top_message li:last-child img {
+	width: 30px;
+	height: 30px;
+	margin-right: 8px;
+	border-radius: 15px;
+	vertical-align: middle;
+}
+
+#main #top_nav #Top_message li:last-child span {
+	text-shadow: none;
+	margin-left: 5px;
+	color: #fff;
+}
+
+#main #top_nav .top_nav_menu span {
+	font-size: 13px;
+}
+
+#main #top_nav .top_nav_menu dt {
+	height: 36px;
+	line-height: 36px;
+}
+
+#main #top_nav .top_nav_menu dt span {
+	margin-left: 8px;
+}
+
+#main #top_nav dd:hover {
+	background: #fff;
+}
+
+#main #top_nav .top_message_all {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #333;
+	background: #dbdbdb;
+}
+
+#main #top_nav #Top_message_advices {
+	width: 250px;
+	text-align: left;
+	font-size: 14px;
+	margin-right: -48px;
+	float: right;
+	cursor: pointer;
+}
+
+#main #top_nav #Top_message_advices dd {
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+#main #top_nav #Top_message_advices dd .fa {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	color: #fff;
+	margin-right: 5px;
+}
+
+#main #top_nav #Top_message_advices dd p {
+	width: 250px;
+	height: 38px;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #fff;
+}
+
+#main #top_nav #Top_message_mail {
+	width: 250px;
+	text-align: left;
+	font-size: 14px;
+	margin-right: -97px;
+	float: right;
+	cursor: pointer;
+}
+
+#main #top_nav #Top_message_mail #Send_mail {
+	float: right;
+	line-height: 36px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+#main #top_nav #Top_message_mail dd {
+	height: 130px;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #fff;
+}
+
+#main #top_nav #Top_message_mail dd img {
+	display: block;
+	width: 40px;
+	height: 40px;
+	float: left;
+	border-radius: 20px;
+	margin: 45px 15px 0px 15px;
+}
+
+#main #top_nav #Top_message_mail dd p {
+	float: left;
+	width: 170px;
+	height: 120px;
+	margin-top: 5px;
+	color: #666;
+	overflow-y: auto;
+}
+
+#main #top_nav #Top_message_mail dd p span {
+	display: block;
+	width: 100%;
+	word-break: break-word;
+	line-height: 14px;
+	margin-top: 5px;
+}
+
+#main #top_nav #Top_message_downlond {
+	width: 200px;
+	text-align: left;
+	font-size: 14px;
+	margin-right: -144px;
+	float: right;
+	cursor: pointer;
+}
+
+#main #top_nav #Top_message_downlond dd {
+	color: #666;
+	padding: 0px 5px;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #fff;
+}
+
+#main #top_nav #Top_message_downlond dd p {
+	float: left;
+	width: 150px;
+	word-break: break-word;
+}
+
+#main #top_nav #Top_message_downlond dd span {
+	display: block;
+	text-align: right;
+}
+
+#main #top_nav #Top_message_user {
+	width: 159px;
+	color: #666;
+	text-align: left;
+	font-size: 14px;
+	cursor: pointer;
+	float: right;
+}
+
+#main #top_nav #Top_message_user dd {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #fff;
+}
+
+#main #top_nav #Top_message_user span {
+	width: 30px;
+	text-align: center;
+}
+
+#main #top_nav #Top_message_user a {
+	text-decoration: none;
+	color: #666;
+}
+
+#main #Left_nav_menu {
+	display: none;
+}
+
+#main #Left_nav {
+	float: left;
+	width: 20%;
+	color: #555;
+	background: #f4f4f4;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	transition: all .33s;
+}
+
+#main #Left_nav li {
+	width: 100%;
+	height: 40px;
+	font-size: 15px;
+	font-weight: 900;
+	margin-bottom: 1px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	line-height: 40px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#main #Left_nav li span {
+	width: 30px;
+	margin-left: 8px;
+}
+
+#main #Left_nav .nav_menu {
+	background: rgba(0, 0, 0, 0.1);
+	height: 0px;
+	width: 100%;
+	overflow: hidden;
+	transition: all .33s;
+}
+
+#main #Left_nav .nav_menu dd {
+	width: 100%;
+	height: 34px;
+	overflow: hidden;
+	line-height: 34px;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#main #Left_nav .nav_menu dd:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+#main #Left_nav .nav_menu dd span {
+	width: 20px;
+	height: 34px;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-align: center;
+}
+
+#main #Left_nav .nav_menu a {
+	text-decoration: none;
+	color: #555;
+	transition: all .33s;
+}
+
+#main #Left_nav .nav_menu a:hover {
+	text-decoration: none;
+	color: #fead71;
+}
+
+#main #Left_nav .nav_menu_line {
+	width: 100%;
+	height: 1px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+#main #Main_Content {
+	float: right;
+	height: 99%;
+	width: 79.8%;
+	transition: all .33s;
+	overflow: hidden;
+}
+
+#main #Main_Content #Content_Window {
+	margin: 20px auto 0px auto;
+	width: 1000px;
+	height: 850px;
+	background: #fff;
+	overflow: hidden;
+}
+
+@media only screen and (min-width: 14px) and (max-width: 680px) {
+	#main #top_nav #Top_logo_menu {
+		display: none;
+	}
+	#main #top_nav #Skins {
+		width: 120px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		top: -50px;
+		float: right;
+	}
+	#main #Top_message {
+		position: absolute;
+		width: 100%;
+		top: 50px;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	#main #top_nav #Top_message li:last-child {
+		float: right;
+	}
+	#main #Left_nav_menu {
+		display: block;
+		width: 100%;
+		height: 50px;
+		color: #fff;
+		text-align: center;
+		line-height: 50px;
+		background: rgba(0, 0, 0, 0.7);
+		float: left;
+		margin-top: 50px;
+	}
+	#main #Left_nav {
+		width: 100%;
+		display: none;
+		overflow: hidden;
+		float: left;
+	}
+	#main #Main_Content {
+		width: 100%;
+		float: left;
+	}
+	#main #top_nav #Top_logo {
+		width: 100%;
+		text-align: center;
+	}
+	#main #top_nav #Top_logo h1 {
+		text-align: center;
+	}
+	#main #top_nav #Top_message_advices {
+		position: relative;
+		float: left;
+		width: 100%;
+		top: 0px;
+		z-index: 7;
+	}
+	#main #top_nav #Top_message_mail {
+		position: relative;
+		float: left;
+		width: 100%;
+		top: 0px;
+		z-index: 7;
+	}
+	#main #top_nav #Top_message_downlond {
+		position: relative;
+		float: left;
+		width: 100%;
+		top: 0px;
+		z-index: 7;
+	}
+	#main #top_nav #Top_message_user {
+		position: relative;
+		float: left;
+		width: 100%;
+		top: 0px;
+		/*left: -301px;*/
+		z-index: 7;
+	}
+}

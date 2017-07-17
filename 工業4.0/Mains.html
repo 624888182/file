@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>工業4.0</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/relation_pattern.css" />
+		<link rel="stylesheet" href="css/intelligence.css" />
+		<link rel="stylesheet" href="css/foundationData.css" />
+		<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/angular-route.min.js"></script>
+		<script type="text/javascript" src="js/jedate.js" ></script>
+	</head>
+
+	<body ng-app="MyApp">
+		<div id="main">
+
+			<!--头部登陆信息-->
+			<div id="top_nav">
+				<!--左侧logo栏位-->
+				<div id="Top_logo">
+					<div id="Top_logo_menu">
+						<span class="fa fa-bars"></span>
+					</div>
+					<h1><a href="#/relation_pattern">LOGO</a></h1>
+				</div>
+				<!--<div class="top_nav_left_btn" id="Team_Status">
+					<span class="fa fa-users"></span>
+					Team Status
+					<span class="fa fa-angle-down"></span>
+				</div>-->
+				
+				<!--更换皮肤-->
+				<div class="top_nav_left_btn" id="Skins">
+					<span class="fa fa-gear"></span> Skins
+					<span class="fa fa-angle-down"></span>
+					<ul class="top_nav_menu" id="Skins_menu">
+						<li class="Skins_first"><span class="fa fa-leaf"></span>Theme Skins</li>
+						<li>Subtle (default)</li>
+						<li>Night</li>
+						<li>Earth</li>
+						<li>Utopia</li>
+						<li>Nature</li>
+						<li>Graphite</li>
+					</ul>
+				</div>
+
+				<!--右侧信息栏位-->
+				<ul id="Top_message">
+					<!--消息-->
+					<li>
+						<div class="Top_message_hint" class="Top_message_hint1">0</div><span class="fa fa-bell"></span>
+					</li>
+					
+					<!--邮件-->
+					<li>
+						<div class="Top_message_hint" class="Top_message_hint2">0</div><span class="fa fa-envelope"></span>
+					</li>
+					
+					<!--下载-->
+					<li>
+						<div class="Top_message_hint" class="Top_message_hint3">0</div><span class="fa fa-download"></span>
+					</li>
+					
+					<!--个人信息-->
+					<li>
+						<img src="img/main/User_head_portrait/00.jpg" />User Name<span class="fa fa-angle-down"></span>
+					</li>
+				</ul>
+
+				<!--消息下拉菜单-->
+				<dl class="top_nav_menu" id="Top_message_advices">
+					<dt class="Skins_first">
+						<span class="fa fa-bell"></span><span class="Top_message_hint1">0</span>&nbsp;Notifications
+					</dt>
+					<!--<dd>
+						<span style="background: #a8bc7b" class="fa fa-user"></span>
+						<p><span id="User_online">0</span>&nbsp;users online.</p>
+					</dd>
+					<dd>
+						<span style="background: #5e87b0" class="fa fa-comment"></span>
+						<p><span id="User_commented">Name</span>&nbsp;commented.</p>
+					</dd>
+					<dd>
+						<span style="background: #f0ad4e" class="fa fa-lock"></span>
+						<p><span id="User_locked">Server</span>&nbsp;server locked.</p>
+					</dd>
+					<dd>
+						<span style="background: #70afc4" class="fa fa-twitter"></span>
+						<p>Twitter connected.</p>
+					</dd>
+					<dd>
+						<span style="background: #d9534f" class="fa fa-heart"></span>
+						<p><span id="User_liked">Name</span>&nbsp;liked.</p>
+					</dd>
+					<dd>
+						<span style="background: #f0ad4e" class="fa fa-warning"></span>
+						<p>Database overlond.</p>
+					</dd>-->
+					<div class="top_message_all" id="Top_message_advices_all">See all notifications <span class="fa fa-arrow-circle-right"></span></div>
+				</dl>
+
+				<!--邮件下拉菜单-->
+				<dl class="top_nav_menu" id="Top_message_mail">
+					<dt class="Skins_first">
+						<span class="fa fa-envelope"></span><span class="Top_message_hint2">0</span>&nbsp;Message<span id="Send_mail" class="fa fa-edit"></span>
+					</dt>
+					<!--<dd>
+						<img src="img/main/User_head_portrait/11.jpg">
+						<p>
+							<span class="mail_name"><b>name</b></span>
+							<span class="mail_content">content</span>
+							<span class="mail_time"><a class="fa fa-clock-o"></a>time</span>
+						</p>
+					</dd>
+					<dd>
+						<img src="img/main/User_head_portrait/22.jpg">
+						<p>
+							<span class="mail_name"><b>name</b></span>
+							<span class="mail_content">content</span>
+							<span class="mail_time"><a class="fa fa-clock-o"></a>time</span>
+						</p>
+					</dd>
+					<dd>
+						<img src="img/main/User_head_portrait/33.jpg">
+						<p>
+							<span class="mail_name"><b>name</b></span>
+							<span class="mail_content">content</span>
+							<span class="mail_time"><a class="fa fa-clock-o"></a>time</span>
+						</p>
+					</dd>-->
+					<div class="top_message_all" id="Top_message_mail_all">See all message <span class="fa fa-arrow-circle-right"></span></div>
+				</dl>
+				
+				<!--下载下拉菜单-->
+				<dl class="top_nav_menu" id="Top_message_downlond">
+					<dt class="Skins_first">
+						<span class="fa fa-download"></span><span class="Top_message_hint3">0</span>&nbsp;Downlond
+					</dt>
+					<!--<dd>
+						<p>报表一</p>
+						<span>0%</span>
+					</dd>
+					<dd>
+						<p>报表二</p>
+						<span>0%</span>
+					</dd>
+					<dd>
+						<p>报表三</p>
+						<span>0%</span>
+					</dd>-->
+					<div class="top_message_all" id="Top_message_downlond_all">See all downlond <span class="fa fa-arrow-circle-right"></span></div>
+				</dl>
+			
+				<!--个人信息下拉菜单-->
+				<dl class="top_nav_menu" id="Top_message_user">
+					<a>
+						<dd>
+							<span class="fa fa-user-circle"></span>&nbsp;个人信息
+						</dd>
+					</a>
+						
+					<a href="index.html">
+						<dd>
+							<span class="fa fa-power-off"></span>&nbsp;登出
+						</dd>
+					</a>
+				</dl>
+			</div>
+			
+			<div id="Left_nav_menu" class="fa fa-bars"></div>
+			<!--左侧导航栏-->
+			<ul id="Left_nav">
+				<!--情报中心-->
+				<li><span class="fa fa-paper-plane	"></span>情報中心</li>
+				<dl class="nav_menu">
+					<dd><span class="fa fa-users"></span>課級主管情報</dd>
+					<dd><span class="fa fa-user-circle"></span>部級主管情報</dd>
+					<dd><span class="fa fa-user"></span>處級主管情報</dd>
+					<a href="#/intelligence_page4">
+						<dd><span class="fa fa-microchip"></span>組包電子看板</dd>
+					</a>
+					<a href="#/intelligence_page5">
+						<dd><span class="fa fa-ravelry"></span>SMT電子看板</dd>
+					</a>
+					<a href="#/intelligence_page6">
+						<dd><span class="fa fa-superpowers"></span>板測電子看板</dd>
+					</a>
+				</dl>
+
+				<!--基础数据中心-->
+				<li><span class="fa fa-database"></span>基礎數據中心</li>
+				<dl class="nav_menu">
+					<dd><span class="fa fa-cube"></span>GlobalSFCIT</dd>
+					<dd><span class="fa fa-cubes"></span>Layout系統化</dd>
+					<a href="#/foundationData_page3">
+						<dd><span class="fa fa-crop"></span>排崗系統</dd>
+					</a>
+					<dd><span class="fa fa-columns"></span>人力成本維護</dd>
+					<dd><span class="fa fa-cogs"></span>機械成本維護</dd>
+					<dd><span class="fa fa-crosshairs"></span>物料成本維護</dd>
+					<dd><span class="fa fa-edge"></span>E化報表信息維護</dd>
+					<dd><span class="fa fa-trello"></span>組包機台拋轉數據</dd>
+					<dd><span class="fa fa-plug"></span>單台成本數據維護</dd>
+					<dd><span class="fa fa-desktop"></span>單台成本基礎資料</dd>
+					<dd><span class="fa fa-street-view"></span>人力分攤報表</dd>
+					<dd><span class="fa fa-tag"></span>組包機台機故率</dd>
+					<dd><span class="fa fa-thumbs-up"></span>品保工站維護</dd>
+					<dd><span class="fa fa-ticket"></span>組包線體工站維護</dd>
+					<dd><span class="fa fa-window-restore"></span>板測機種維護</dd>
+					<dd><span class="fa fa-chain"></span>板測線體維護</dd>
+				</dl>
+
+				<!--工管流-->
+				<li><span class="fa fa-wrench"></span>工管流</li>
+				<dl class="nav_menu">
+					<dd><span class="fa fa-bar-chart"></span>機台故障率</dd>
+					<dd><span class="fa fa-eercast"></span>SMT拋料</dd>
+					<dd><span class="fa fa-compass"></span>貼片機CPK監測</dd>
+					<dd><span class="fa fa-opera"></span>OEE</dd>
+					<dd><span class="fa fa-laptop"></span>SMTMEReport</dd>
+				</dl>
+
+				<!--生管流-->
+				<li><span class="fa fa-address-card"></span>生管流</li>
+				<dl class="nav_menu">
+					<dd><span class="fa fa-area-chart"></span>稼動率</dd>
+					<dd><span class="fa fa-bar-chart"></span>UPPH達成率</dd>
+					<dd><span class="fa fa-bar-chart-o"></span>排配達成率</dd>
+					<dd><span class="fa fa-line-chart"></span>工時差異率</dd>
+					<dd><span class="fa fa-file"></span>QR報表</dd>
+					<dd><span class="fa fa-file-archive-o"></span>盤點表</dd>
+					<dd><span class="fa fa-file-audio-o"></span>出貨信息報表</dd>
+					<dd><span class="fa fa-file-code-o"></span>成產達成報表</dd>
+					<dd><span class="fa fa-file-excel-o"></span>分析維修日報</dd>
+				</dl>
+
+				<!--品管流-->
+				<li><span class="fa fa-superpowers"></span>品管流</li>
+				<dl class="nav_menu">
+					<dd><span class="fa fa-pie-chart"></span>生產良率</dd>
+					<dd><span class="fa fa-file-image-o"></span>QA OBA報表</dd>
+					<dd><span class="fa fa-file-powerpoint-o"></span>Trend chart-ASSY</dd>
+					<dd><span class="fa fa-file-text"></span>IQC報表</dd>
+					<dd><span class="fa fa-file-word-o"></span>SMTQA報表</dd>
+					<dd><span class="fa fa-file-zip-o"></span>SMTMEReport</dd>
+				</dl>
+
+				<!--经管流-->
+				<li><span class="fa fa-cubes"></span>經管流</li>
+				<dl class="nav_menu">
+					<dd><span class="fa fa-file"></span>單台成本報表</dd>
+					<dd><span class="fa fa-file-archive-o"></span>每日營收報表</dd>
+					<dd><span class="fa fa-file-code-o"></span>工單結案率</dd>
+					<dd><span class="fa fa-file-excel-o"></span>AR報表</dd>
+					<dd><span class="fa fa-image"></span>報廢金額查詢</dd>
+					<dd><span class="fa fa-user"></span>人力成本</dd>
+				</dl>
+
+				<!--CNC自动化-->
+				<li><span class="fa fa-cogs"></span>CNC自動化</li>
+				<dl class="nav_menu">
+					<dd><span class="fa fa-bar-chart"></span>CNC嫁動率</dd>
+					<dd><span class="fa fa-file"></span>CNC嫁動率明細</dd>
+					<dd><span class="fa fa-repeat"></span>CNC機台實時狀態</dd>
+					<dd><span class="fa fa-paragraph"></span>CNC Daily report</dd>
+				</dl>
+
+				<!--系统管理-->
+				<li><span class="fa fa-assistive-listening-systems"></span>系統管理</li>
+				<dl class="nav_menu">
+					<dd><span class="fa fa-address-book-o"></span>客戶管理</dd>
+					<dd><span class="fa fa-bars"></span>功能菜單管理</dd>
+					<dd><span class="fa fa-user"></span>角色管理</dd>
+					<dd><span class="fa fa-cog"></span>設置角色權限菜單</dd>
+					<dd><span class="fa fa-industry"></span>廠區管理</dd>
+					<dd><span class="fa fa-user-circle-o"></span>用戶管理</dd>
+				</dl>
+				<div class="nav_menu_line"></div>
+			</ul>
+
+			<!--视图窗口-->
+			<div id="Main_Content">
+				<div id="Content_Window">
+					<div ng-view></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+
+</html>
