@@ -108,6 +108,31 @@ function Cricle(x, y, r) {
 	cxt.restore();
 };
 
+//canvas自适应
+$(window).resize(resizeCanvas);
+function resizeCanvas() {
+	$("canvas").attr("width", $(window).get(0).innerWidth);
+	$("canvas").attr("height", $(window).get(0).innerHeight);
+	cxt.fillRect(0, 0, $("canvas").width(), $("canvas").height());
+};
+resizeCanvas();
+
+//登陆判定
+var username=document.getElementById("Login_txt");
+var passwords=document.getElementById("Login_password");
+var loginbtn=document.getElementById("Login_Btn");
+var login_hint=document.getElementById("login_hint");
+loginbtn.onclick=function(){
+	if(username.value=="admin"&&passwords.value=="admin"){
+		loginbtn.href="Mains.html";
+	}else{
+		login_hint.innerHTML="User name / password wrong";
+		username.value=='';
+		passwords.value=='';
+	}
+}
+
+//rem
 document.documentElement.style.fontSize = innerWidth / 16 + 'px';
 onresize = function() {
 	document.documentElement.style.fontSize = innerWidth / 16 + 'px';

@@ -332,6 +332,8 @@ html {
 	text-align: left;
 	font-size: 14px;
 	cursor: pointer;
+	position: absolute;
+	right: 0px;
 	float: right;
 }
 
@@ -355,6 +357,7 @@ html {
 }
 
 #main #Left_nav {
+	display: block;
 	float: left;
 	width: 20%;
 	color: #555;
@@ -522,7 +525,6 @@ html {
 		float: left;
 		width: 100%;
 		top: 0px;
-		/*left: -301px;*/
 		z-index: 7;
 	}
 }

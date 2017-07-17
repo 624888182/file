@@ -5,25 +5,22 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title></title>
-		<link rel="stylesheet" href="css/Login.css" />
-		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/Login.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 		<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
 	</head>
 
 	<body>
 		<div id="Login">
 			<canvas id='canvas'></canvas>
-			<div id="box1" class="box blurred-bg tinted">
-				<div class="content">
-					<h1>LF LX 智能工廠 BIG DATA</h1>
-					<p>User name</p>
-					<input type="text" id="Login_Txt" placeholder="请输入用户名">
-					<p>Password</p>
-					<input type="password" id="Login_Txt" placeholder="请输入密码">
-					<p>Login</p>
-					<button>登陸</button>
-				</div>
-			</div>
+			<ul id="Content" class="box">
+				<li><h1>LF LX 智能工廠 BIG DATA</h1></li>
+				<li><span class="fa fa-user"></span><input type="text" id="Login_txt" placeholder="User Name"></li>
+				<li><span class="fa fa-lock"></span><input type="password" id="Login_password" placeholder="Password"></li>
+				<li id="login_hint"></li>
+				<li><a id="Login_Btn" href="#">登陸</a></li>
+			</ul>
 		</div>
 	</body>
 	<script type="text/javascript" src="js/Login.js"></script>
